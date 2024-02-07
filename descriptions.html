@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
+  <meta name="author" content="Cindy Park">
   <meta name="description" content="One week of #RunKeeper Tweets">
   <!--Load math.js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.2/math.js" integrity="sha512-U9fwz8ekKht5NdL1x4+Yh3DoXeSrsZ0M7ALcijykvrVKD+101nax1MVdc0wNSVh4GOwZGY7yQpz+rAnnoX7O3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!--math.js-->
@@ -48,10 +48,11 @@
     <h1>What people are saying</h1>
     <p>
       What text are you interested in looking for?
-      <input id="textFilter" type="text">
+      <input id="textFilter" type="text" onkeydown="showText()"/>
     </p>
     <p>
       <span id="searchCount">???</span> Tweets contain the text '<span id="searchText">???</span>'.
+
     </p>
     <table class="table table-striped">
       <thead>
